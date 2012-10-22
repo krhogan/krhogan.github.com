@@ -78,6 +78,7 @@ body {
 }
 header {
 	position:relative;
+	height:150px;
 }
 #menu {
 	position:absolute;
@@ -90,18 +91,12 @@ li {
 	font-size:1em;
 }
 section img {
-	float:left;
 	width:300px;
 	left:200px;
 }
-h2 {
+#dogs {
 	float:left;
-	font-size:2em;
-	
-}
-p {
-	float:left;
-	width:300px;
+	width:50%;
 }
 footer {
 	position:relative;
