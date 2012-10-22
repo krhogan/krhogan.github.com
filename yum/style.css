@@ -79,20 +79,64 @@ header#site-header h1 { position:absolute; left:10px; top:10px; }
 header#site-header h1 a { display:block; width:200px; height:200px; background:url(images/logo.png) top center no-repeat; text-indent:-9999px; }
 
 
-h1 {
-	font-size:2em;
+body {
+	width:960px;
+	margin: 0 auto;
+	font-family:georgia;
+	position:relative;
 }
-h2 {
-	color:gray;
+
+header h1 {
+	color:#cb4c4c;
+	font-size:5em;
+	padding:30px;
+	text-align:center;
+}
+header p {
+	margin-left:60px;
 	font-weight:bold;
 }
-img {
+#ingredients, directions {
 	float:left;
+	width:300px;
+	margin:60px;
 }
-article {
-	float:left;
-	width:400px;
-	padding:100px;
+#ingredients {
+	text-align:center;
+	font-size:0.85em;
+	width:300px;
+	padding:10px;
+	border:dotted;
+	background-color:#f4d9a6;
+}
+p {
+	font-size:1em;
+	font-weight:bold;
+}
+h3 {
+	font-size:2em;
+}
+#directions li {
+	list-style-type: square;
+	font-size:.90em;
+	margin:10px;
+}
+#directions h3 {
+	position:absolute;
+	background-color:#cb4c4c;
+	color:white;
+	margin:10px;
+	padding:5px;
+	width:500px;
+	right:10px;
+	top:120px;
+	text-align:center;
+}
+a {
+	position:relative;
+	left:55px;
+	text-decoration:none;
+
 }
 
 

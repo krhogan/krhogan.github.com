@@ -1,5 +1,3 @@
-
-
 /* Meyer Reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -72,5 +70,46 @@ table {
 .clearfix { display: inline-block; }
 html[xmlns] .clearfix { display: block; }
 * html .clearfix { height: 1%; }
+
+body {
+	width:960px;
+	margin: 0 auto;
+	position:relative;
+}
+header {
+	position:relative;
+}
+#menu {
+	position:absolute;
+	top:75px;
+}
+li {
+	float:left;
+	width:40px;
+	margin:10px;
+	font-size:1em;
+}
+section img {
+	float:left;
+	width:300px;
+	left:200px;
+}
+h2 {
+	float:left;
+	font-size:2em;
+	
+}
+p {
+	float:left;
+	width:300px;
+}
+footer {
+	position:relative;
+	clear:both;
+	margin-left:300px;
+}
+
+	
+
 
 
