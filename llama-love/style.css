@@ -76,13 +76,21 @@ html[xmlns] .clearfix { display: block; }
 header#site-header h1 { position:absolute; left:10px; top:10px; }
 header#site-header h1 a { display:block; width:200px; height:200px; background:url(images/logo.png) top center no-repeat; text-indent:-9999px; }
 
-
+body {
+	font-family:helvetica;
+}
 h1 {
 	font-size:2em;
+	font-weight:bold;
 }
 h2 {
 	color:gray;
-	font-weight:bold;
+	font-size:.6em;
+	padding:3px;
+	margin-bottom:10px;
+}
+p {
+	font-size:.8em;
 }
 img {
 	float:left;
