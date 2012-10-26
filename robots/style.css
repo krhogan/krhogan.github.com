@@ -73,6 +73,7 @@ html[xmlns] .clearfix { display: block; }
 body {
 	width:850px;
 	margin: 0 auto;
+	font-family:helvetica;
 }
 
 header {
@@ -87,25 +88,42 @@ a {
 	top:5px;
 }
 #main-menu {
-	background-color:pink;
-	padding:30px;
+	background-color:#5f3f3f;
+	padding:20px;
 }
 #main-menu li{
 	float:left;
 	margin:10px;
+}
+#main-menu a {
+	color:white;
+	text-transform:uppercase;
 }
 #page {
 	float:left;
 	width:50%;
 	margin:30px;
 }
-#footer-follow li{
-	float:right;
-	width:8%;
-	right:50px;
+h2 {
+	font-size:1em;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+p {
+	font-size:.7em;
+	line-height:1.5em;
 }
 footer {
 	position:relative;
+	clear:both;
+}
+#footer-contact {
+	float:left;
+	width:20%;
+}
+#footer-follow li{
+	float:right;
+	width:8%;
 }
 
 
