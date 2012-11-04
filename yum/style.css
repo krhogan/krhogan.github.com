@@ -84,6 +84,7 @@ body {
 	margin: 0 auto;
 	font-family:georgia;
 	position:relative;
+	background-color:#F7E7D7;
 }
 
 header h1 {
@@ -105,9 +106,12 @@ header p {
 	text-align:center;
 	font-size:0.85em;
 	width:300px;
-	padding:10px;
-	border:dotted;
-	background-color:#f4d9a6;
+	padding:20px;
+	background-color:#FCEFE3;
+	box-shadow: 1px 1px 15px #cb4c4c;
+	border-radius:10px;
+	
+	line-height:1.2em;
 }
 p {
 	font-size:1em;
@@ -115,6 +119,9 @@ p {
 }
 h3 {
 	font-size:2em;
+	font-style:italic;
+	letter-spacing:.1em;
+	padding:3px;
 }
 #directions li {
 	list-style-type: square;
@@ -124,6 +131,9 @@ h3 {
 #directions h3 {
 	position:absolute;
 	background-color:#cb4c4c;
+	border-radius:10px;
+	box-shadow: 5px 5px 10px #773C3C;
+	font-style:italic;
 	color:white;
 	margin:10px;
 	padding:5px;
