@@ -78,6 +78,26 @@ html[xmlns] .clearfix { display: block; }
 header#site-header h1 { position:absolute; left:10px; top:10px; }
 header#site-header h1 a { display:block; width:200px; height:200px; background:url(images/logo.png) top center no-repeat; text-indent:-9999px; }
 
+@font-face {
+    font-family: 'LobsterTwoRegular';
+    src: url('fonts/LobsterTwo-Regular-webfont.eot');
+    src: url('fonts/LobsterTwo-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/LobsterTwo-Regular-webfont.woff') format('woff'),
+         url('fonts/LobsterTwo-Regular-webfont.ttf') format('truetype'),
+         url('fonts/LobsterTwo-Regular-webfont.svg#LobsterTwoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LobsterTwoItalic';
+    src: url('fonts/LobsterTwo-Italic-webfont.eot');
+    src: url('fonts/LobsterTwo-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/LobsterTwo-Italic-webfont.woff') format('woff'),
+         url('fonts/LobsterTwo-Italic-webfont.ttf') format('truetype'),
+         url('fonts/LobsterTwo-Italic-webfont.svg#LobsterTwoItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
 	width:960px;
@@ -89,6 +109,7 @@ body {
 
 header h1 {
 	color:#cb4c4c;
+	font-family: 'LobsterTwoRegular';
 	font-size:5em;
 	padding:30px;
 	text-align:center;
@@ -118,8 +139,8 @@ p {
 	font-weight:bold;
 }
 h3 {
+	font-family: 'LobsterTwoItalic';
 	font-size:2em;
-	font-style:italic;
 	letter-spacing:.1em;
 	padding:3px;
 }

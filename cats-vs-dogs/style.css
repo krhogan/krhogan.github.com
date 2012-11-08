@@ -71,6 +71,16 @@ table {
 html[xmlns] .clearfix { display: block; }
 * html .clearfix { height: 1%; }
 
+@font-face {
+    font-family: 'league_gothicregular';
+    src: url('fonts/league_gothic-webfont.eot');
+    src: url('fonts/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/league_gothic-webfont.woff') format('woff'),
+         url('fonts/league_gothic-webfont.ttf') format('truetype'),
+         url('fonts/league_gothic-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
 	width:850px;
 	margin: 0 auto;
@@ -101,7 +111,7 @@ li:first-child {
 }
 h2 {
 	font-size:1.8em;
-	font-weight:bold;
+	font-family: 'league_gothicregular';
 	padding-top:15px;
 	padding-bottom:15px;
 }
