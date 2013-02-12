@@ -456,6 +456,7 @@ a:hover {
 .row-fluid .span6 {
   width: 48.93617021276595%;
   *width: 48.88297872340425%;
+  margin-left:30%;
 }
 
 .row-fluid .span5 {
