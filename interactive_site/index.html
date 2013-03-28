@@ -3,6 +3,7 @@
   <head>
 	<title>Fruit-Opia</title>
     	<link rel="stylesheet" type='text/css' href="style.css" />
+    	<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
   </head>
 <body>
 	<nav id="sticky-nav"> 
@@ -12,48 +13,61 @@
 		<h1>Fruit-Opia</h1>
 		<h3>Add fruit to any kind of dish and brighten up your diet!</h3>
 	</header>
-	<section id="course-choice">
-		<h2>First!</h2>
-		<h3>Choose your course.</h3>
+	<div id="first-page">
+		<section class="section-header">
+			<h2>First!</h2>
+			<h3>Choose your course.</h3>
+		</section>
 			<ul>
-				<li><img src="images/breakfastmain.png" alt="breakfast"/></li>
-				<li><img src="images/lunchmain.png" alt="lunch"/></li>
-				<li><img src="images/dinnermain.png" alt="dinner"/></li>
-			</ul>	
-	</section>
-	<section class="section-header">
-		<h2>Second!</h2>
-		<h3>Choose a recipe.</h3>
+				<li id="breakfast-selector"><img src="images/breakfastmain.png" alt="breakfast"/></li>
+				<li id="lunch-selector"><img src="images/lunchmain.png" alt="lunch"/></li>
+				<li id="dinner-selector"><img src="images/dinnermain.png" alt="dinner"/></li>
+			</ul>
+			<div class="clear"></div>
+	</div>
+	<div id="second-page">
+		<section class="section-header">
+			<h2>Second!</h2>
+			<h3>Choose a recipe.</h3>
+		</section>
 			<article class="course">
-				<ul>
-					<li><img src="images/breakfastcrisp.png" alt="crisp"/></li>
-					<li><img src="images/breakfastpancake.png" alt="pancake"/></li>
-					<li><img src="images/breakfastparfait.png" alt="parfait"/></li>
-					<li><img src="images/breakfastburrito.png" alt="burrito"/></li>
+				<div id="breakfast">
+					<ul>
+						<li id="crisp"><img src="images/breakfastcrisp.png" alt="crisp"/></li>
+						<li id="pancake"><img src="images/breakfastpancake.png" alt="pancake"/></li>
+						<li id ="parfait"><img src="images/breakfastparfait.png" alt="parfait"/></li>
+						<li id ="burrito"><img src="images/breakfastburrito.png" alt="burrito"/></li>
 				</ul>
+				</div>
 			</article>
 			<article class="course">
-			<ul>
-				<li><img src="images/lunchsandwich.png" alt="sandwich"/></li>
-				<li><img src="images/lunchsalad.png" alt="salad"/></li>
-				<li><img src="images/lunchfruitsalad.png" alt="salad2"/></li>
-				<li><img src="images/lunchwrap.png" alt="wrap"/></li>
-			</ul>
+				<div id="lunch">
+					<ul>
+						<li id="sandwich"><img src="images/lunchsandwich.png" alt="sandwich"/></li>
+						<li id="salad"><img src="images/lunchsalad.png" alt="salad"/></li>
+						<li id="salad2"><img src="images/lunchfruitsalad.png" alt="salad2"/></li>
+						<li id="wrap"><img src="images/lunchwrap.png" alt="wrap"/></li>
+					</ul>
+				</div>
 		</article>
 		<article class="course">
-			<ul>
-				<li><img src="images/dinnerchickenkiwi.png" alt="chickenkiwi"/></li>
-				<li><img src="images/dinnerpizza.png" alt="pizza"/></li>
-				<li><img src="images/dinnerorangechicken.png" alt="orangechicken"/></li>
-				<li><img src="images/dinnerberrychops.png" alt="berrychops"/></li>
-			</ul>
+			<div id="dinner">
+				<ul>
+					<li id="chickenkiwi"><img src="images/dinnerchickenkiwi.png" alt="chickenkiwi"/></li>
+					<li id="pizza"><img src="images/dinnerpizza.png" alt="pizza"/></li>
+					<li id="orangechicken"><img src="images/dinnerorangechicken.png" alt="orangechicken"/></li>
+					<li id="berrychops"><img src="images/dinnerberrychops.png" alt="berrychops"/></li>
+				</ul>
+			</div>
 		</article>
-	</section>
-	<section class="section-header">
-			<h2>Third!</h2>
-			<h3>Let's get cookin'!</h3>	
-		</section>
+	</div>
+	<div id="third-page">
 		<section class="recipes">
+			<div id="recipe-crisp">
+				<section class="section-header">
+					<h2>Third!</h2>
+					<h3>Let's get cookin'!</h3>	
+				</section>
 			<article class="icon">
 				<div>
 					<img src="images/breakfastcrisp.png" alt="crisp"/>
@@ -84,8 +98,14 @@
 						</ul>
 					</div>
 			</article>
+			</div>
 		</section>
 		<section class="recipes">
+			<div id="recipe-pancake">
+				<section class="section-header">
+					<h2>Third!</h2>
+					<h3>Let's get cookin'!</h3>	
+				</section>
 			<article class="icon">
 				<div>
 					<img src="images/breakfastpancake.png" alt="pancake"/>
@@ -119,8 +139,14 @@
 						</ul>
 					</div>
 			</article>
+			</div>
 		</section>
 		<section class="recipes">
+			<div id="recipe-parfait">
+				<section class="section-header">
+					<h2>Third!</h2>
+					<h3>Let's get cookin'!</h3>	
+				</section>
 			<article class="icon">
 				<div>
 					<img src="images/breakfastparfait.png" alt="parfait"/>
@@ -148,8 +174,14 @@
 						</ul>
 					</div>
 			</article>
+			</div>
 		</section>
 		<section class="recipes">
+			<div id="recipe-burrito">
+				<section class="section-header">
+					<h2>Third!</h2>
+					<h3>Let's get cookin'!</h3>	
+				</section>
 			<article class="icon">
 				<div>
 					<img src="images/breakfastburrito.png" alt="burrito"/>
@@ -176,8 +208,14 @@
 						</ul>
 					</div>
 			</article>
+			</div>
 		</section>
 		<section class="recipes">
+			<div id="recipe-sandwich">
+				<section class="section-header">
+					<h2>Third!</h2>
+					<h3>Let's get cookin'!</h3>	
+				</section>
 			<article class="icon">
 			<div>
 				<img src="images/lunchsandwich.png" alt="sandwich"/>
@@ -203,8 +241,14 @@
 					</ul>
 				</div>
 		</article>
+		</div>
 	</section>
 	<section class="recipes">
+		<div id="recipe-salad">
+			<section class="section-header">
+					<h2>Third!</h2>
+					<h3>Let's get cookin'!</h3>	
+				</section>
 		<article class="icon">
 			<div>
 				<img src="images/lunchsalad.png" alt="salad"/>
@@ -231,8 +275,14 @@
 					</ul>
 				</div>
 		</article>
+		</div>
 	</section>
 	<section class="recipes">
+		<div id="recipe-fruitsalad">
+			<section class="section-header">
+					<h2>Third!</h2>
+					<h3>Let's get cookin'!</h3>	
+				</section>
 		<article class="icon">
 			<div>
 				<img src="images/lunchfruitsalad.png" alt="fruitsalad"/>
@@ -261,38 +311,50 @@
 					</ul>
 				</div>
 		</article>
+		</div>
 	</section>
 	<section class="recipes">
-		<article class="icon">
-			<div>
-				<img src="images/lunchwrap.png" alt="wrap"/>
-				<h4>Serves 4</h4>
-			</div>
-		</article>
-		<article class="name-instructions">
-			<h2>B.L.A.T. Wraps</h2>
-				<ul>
-					<li>Place bacon in a large, deep skillet. Cook over medium heat for 10 to 15 minutes, or until crisp. Drain, crumble, and set aside.</li>
-					<li>Warm tortillas in microwave oven for 30 to 45 seconds, or until soft. Spread 1 tablespoon Ranch dressing down the center of each tortilla. </li>
-					<li>Layer crumbled bacon, avocado, tomato and lettuce over the dressing. </li>
-					<li>Roll the tortilla around the other ingredients.</li>
-				</ul>
-		</article>
-		<article class="ingredients">
-			<h3>What we'll need</h3>
-				<div class="ingredients-content">
-					<ul>
-						<li>8 slices bacon</li>
-						<li>4 (10 inch) flour tortillas</li>
-						<li>4 tablespoons Ranch salad dressing</li>
-						<li>1 avocado - peeled, pitted and diced</li>
-						<li>1 tomato, chopped</li>
-						<li>1 cup shredded lettuce</li>
-					</ul>
+		<div id="recipe-wrap">
+			<section class="section-header">
+					<h2>Third!</h2>
+					<h3>Let's get cookin'!</h3>	
+				</section>
+			<article class="icon">
+				<div>
+					<img src="images/lunchwrap.png" alt="wrap"/>
+					<h4>Serves 4</h4>
 				</div>
-		</article>
+			</article>
+			<article class="name-instructions">
+				<h2>B.L.A.T. Wraps</h2>
+					<ul>
+						<li>Place bacon in a large, deep skillet. Cook over medium heat for 10 to 15 minutes, or until crisp. Drain, crumble, and set aside.</li>
+						<li>Warm tortillas in microwave oven for 30 to 45 seconds, or until soft. Spread 1 tablespoon Ranch dressing down the center of each tortilla. </li>
+						<li>Layer crumbled bacon, avocado, tomato and lettuce over the dressing. </li>
+						<li>Roll the tortilla around the other ingredients.</li>
+					</ul>
+			</article>
+			<article class="ingredients">
+				<h3>What we'll need</h3>
+					<div class="ingredients-content">
+						<ul>
+							<li>8 slices bacon</li>
+							<li>4 (10 inch) flour tortillas</li>
+							<li>4 tablespoons Ranch salad dressing</li>
+							<li>1 avocado - peeled, pitted and diced</li>
+							<li>1 tomato, chopped</li>
+							<li>1 cup shredded lettuce</li>
+						</ul>
+					</div>
+			</article>
+		</div>
 	</section>
 	<section class="recipes">
+		<div id="recipe-chickenkiwi">
+			<section class="section-header">
+					<h2>Third!</h2>
+					<h3>Let's get cookin'!</h3>	
+				</section>
 		<article class="icon">
 			<div>
 				<img src="images/dinnerchickenkiwi.png" alt="chickenkiwi"/>
@@ -328,8 +390,14 @@
 					</ul>
 				</div>
 		</article>
+		</div>
 	</section>
 	<section class="recipes">
+		<div id="recipe-pizza">
+			<section class="section-header">
+					<h2>Third!</h2>
+					<h3>Let's get cookin'!</h3>	
+				</section>
 		<article class="icon">
 			<div>
 				<img src="images/dinnerpizza.png" alt="pizza"/>
@@ -358,8 +426,14 @@
 					</ul>
 				</div>
 		</article>
+		</div>
 	</section>
 	<section class="recipes">
+		<div id="recipe-orangechicken">
+			<section class="section-header">
+					<h2>Third!</h2>
+					<h3>Let's get cookin'!</h3>	
+				</section>
 		<article class="icon">
 			<div>
 				<img src="images/dinnerorangechicken.png" alt="orangechicken"/>
@@ -387,8 +461,14 @@
 					</ul>
 				</div>
 		</article>
+		</div>
 	</section>
 	<section class="recipes">
+		<div id="recipe-berrychops">
+			<section class="section-header">
+					<h2>Third!</h2>
+					<h3>Let's get cookin'!</h3>	
+				</section>
 		<article class="icon">
 			<div>
 				<img src="images/dinnerberrychops.png" alt="berrychops"/>
@@ -417,7 +497,9 @@
 					</ul>
 				</div>
 		</article>
+		</div>
 	</section>
+	</div>
 </body>
 </html>
 

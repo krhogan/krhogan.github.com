@@ -151,51 +151,54 @@ html[xmlns] .clearfix { display: block; }
 
 body {
 	width:100%;
-	margin:50px 0px; padding:0px;
 	text-align:center;
+}
+header {
+	width:100%;
+	height:60%;
+	background-color:#7a294b;
 }
 header h1 {
 	font-family: 'marketing_scriptregular';
 	font-size:7em;
+	padding-top:50px;
 }
 header h3 {
 	font-family: 'SourceSansProLight';
-	padding:20px;
+	padding:20px 20px 50px 20px;
 	font-size:2em;
 }
-#course-choice {
+#first-page {
+	background-color:#ac324d;
+	height:40%;
 	width:100%;
-	margin-top:60px;
 }
-#course-choice h2 {
-	font-family: 'marketing_scriptregular';
-	font-size:5em;
-	text-align:center;
-}
-#course-choice h3 {
-	font-family: 'SourceSansProLight';
-	font-size:2em;
-	text-transform: uppercase;
-	text-align:center;
-}
-#course-choice ul {
+#first-page ul {
 	width:70%;
 	margin-left:25%;
 }
-#course-choice img {
+#first-page img {
 	width:150px;
 }
-#course-choice li {
+#first-page li {
 	float:left;
 	margin:30px;
 }
-.section-header {
+.clear {
 	clear:both;
+}
+#second-page {
+	background-color:#e29000;
+	height:100%;
+	width:100%;
+}
+.section-header {
 	width:100%;
 }
 .section-header h2 {
 	font-family: 'marketing_scriptregular';
 	font-size:5em;
+	padding-top:90px;
 }
 .section-header h3 {
 	font-family: 'SourceSansProLight';
@@ -214,6 +217,11 @@ header h3 {
 .course li {
 	float:left;
 	margin:30px;
+}
+#third-page {
+	background-color:#752849;
+	height:100%;
+	width:100%;
 }
 .recipes {
 	width:100%;
