@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Kylen Hogan</title>
+    	<link rel="stylesheet" type='text/css' href="style.css" />
+    	<link rel="stylesheet" href="nivo-slider/themes/default/default.css" type="text/css" media="screen" />
+    	<link rel="stylesheet" href="nivo-slider/themes/light/light.css" type="text/css" media="screen" />
+	    <link rel="stylesheet" href="nivo-slider/themes/dark/dark.css" type="text/css" media="screen" />
+	    <link rel="stylesheet" href="nivo-slider/themes/bar/bar.css" type="text/css" media="screen" />
+	    <link rel="stylesheet" href="nivo-slider/nivo-slider.css" type="text/css" media="screen" />
+	    <link rel="stylesheet" href="nivo-slider/demo/style.css" type="text/css" media="screen" />
+  </head>
+  <body>
+	<div id='site-wrapper'>
+	<header>
+		<a href="index.html"><img src="images/logo.png" alt="logo" id="logo"/></a>
+	</header>
+	</div>
+	<div id='menu-wrapper'>
+		
+		<nav id='top-nav'>
+			<ul>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="portfolio_1.html">Portfolio</a></li>
+			</ul>
+		</nav>
+	</div>
+	<section id='words'>
+		<h1>Hello there!</h1>
+		<h2>My name is Kylen</h2>
+		<p>I'm a graphic designer and I like to make things look</p>
+		<h3>pretty</h3>
+	</section>
+	<section id="ornament_1">
+		<img src="images/ornamentleft-01.png" alt="1"/>
+	</section>
+	<section id="ornament_2">
+		<img src="images/ornamentright-02.png" alt="2"/>
+	</section>
+	<section id="label">
+	 	<img src="images/label.png" alt="label"/>
+	 </section>
+	<aside id='slideshow'>
+		<h2>Recent Projects</h2>
+		
+	<div id="wrapper">
+		<div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+            	<a href="calendar.html"><img src="images/calendar_cover.jpg" alt="Slide 1"/></a>
+                <a href="10things.html"><img src="images/booklet_cover.jpg" alt="Slide 2"/></a>
+                <a href="diagram.html"><img src="images/diagram.jpg" alt="Slide 3"/></a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="nivo-slider/demo/scripts/jquery-1.7.1.min.js"></script>
+    	<script type="text/javascript" src="nivo-slider/jquery.nivo.slider.js"></script>
+    	<script type="text/javascript">
+		$(window).load(function() {
+		    $('#slider').nivoSlider({
+		        effect: 'slideInLeft', // Specify sets like: 'fold,fade,sliceDown'
+		        slices: 15, // For slice animations
+		        boxCols: 8, // For box animations
+		        boxRows: 4, // For box animations
+		        animSpeed: 500, // Slide transition speed
+		        pauseTime: 3000, // How long each slide will show
+		        startSlide: 0, // Set starting Slide (0 index)
+		        directionNav: true, // Next & Prev navigation
+		        controlNav: true, // 1,2,3... navigation
+		        controlNavThumbs: false, // Use thumbnails for Control Nav
+		        pauseOnHover: true, // Stop animation while hovering
+		        manualAdvance: false, // Force manual transitions
+		        prevText: 'Prev', // Prev directionNav text
+		        nextText: 'Next', // Next directionNav text
+		        randomStart: false, // Start on a random slide
+		        beforeChange: function(){}, // Triggers before a slide transition
+		        afterChange: function(){}, // Triggers after a slide transition
+		        slideshowEnd: function(){}, // Triggers after all slides have been shown
+		        lastSlide: function(){}, // Triggers when last slide is shown
+		        afterLoad: function(){} // Triggers when slider has loaded
+		    });
+		});
+		</script>
+		</aside>
+  </body>
+</html>
