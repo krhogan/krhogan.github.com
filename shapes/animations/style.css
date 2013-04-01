@@ -1,0 +1,352 @@
+/* Meyer Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Center Content */
+
+.centered { 
+  margin:0 auto;
+  width:960px;
+}
+
+
+/* Clearfix */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix { display: inline-block; }
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }
+
+/* logo replacement */
+
+header#site-header h1 { position:absolute; left:10px; top:10px; }
+header#site-header h1 a { display:block; width:200px; height:200px; background:url(images/logo.png) top center no-repeat; text-indent:-9999px; }
+
+@-webkit-keyframes drop {
+   0% { -webkit-transform: translate(0,0) scaleX(1) scaleY(1); }
+   50%  { -webkit-transform: translate(0px,300px) scaleX(5) scaleY(5); }
+   100% {  -webkit-transform: translate(0px, 600) scaleX(10) scaleY(10); }
+}   
+@-webkit-keyframes shadow-move-farright {
+   0% { -webkit-transform: translate(25,0); }
+   100% {  -webkit-transform: translate(232px,0px); }
+}  
+@-webkit-keyframes shadow-move-farleft {
+   0% { -webkit-transform: translate(232,0); }
+   100% {  -webkit-transform: translate(-232px,0px); }
+}
+@-webkit-keyframes shadow-move-right {
+   0% { -webkit-transform: translate(102,0); }
+   100% {  -webkit-transform: translate(78px,0px); }
+}
+@-webkit-keyframes shadow-move-left {
+   0% { -webkit-transform: translate(180,0); }
+   100% {  -webkit-transform: translate(-78px,0px); }
+
+}
+body {
+	width:960px;
+	margin: 0 auto;
+}
+#iphone {
+	position:relative;
+	width:270px;
+	height:500px;
+	background-color:black;
+	border-radius:22px;
+	margin:50px;
+	}
+#screen {
+	position:absolute;
+	width:225px;
+	height:360px;
+	background-color:#262626;
+	top:65px;
+	left:20px;
+}
+#ball {
+	width:20px;
+  	height:20px;
+  	margin-left:45%;
+  	border-radius:50%;
+  	background-color:cyan;
+  	-webkit-animation: drop; 
+  	-webkit-animation-duration: 5s;
+  	-webkit-animation-timing-fuction: ease-in-out;
+}
+#oval {
+	position:absolute;
+	width:60px;
+	height:13px;
+	background-color:#262626;
+	top:30px;
+	left:100px;
+	border-radius: 100px;
+}
+#camera {
+	position:absolute;
+	width:15px;
+	height:15px;
+	background-color:#262626;
+	top:30px;
+	left:65px;
+	border-radius:100px;
+}
+#button {
+	position:absolute;
+	width: 45px;
+	height: 45px;
+	border-radius:100px;
+	background-color:#262626;
+	top:440px;
+	left:110px;
+}
+#button-detail {
+	position:absolute;
+	width:20px;
+	height:20px;
+	top:12px;
+	left:12px;
+	border-style:solid;
+	border-color:white;
+	border-radius:5px;
+	border-width:1px;
+}
+
+#container {
+	position:relative;
+	background-color:#1F130D;
+	width:350px;
+	height:250px;
+	border-radius:30px;
+	margin:50px;
+}
+#container-liner {
+	position:absolute;
+	background-color:#3A2B25;
+	width:315px;
+	height:215px;
+	top:16px;
+	left:16px;
+	border-color:#6D6E70;
+	border-style:solid;
+	border-radius:15px;
+	border-width:1.5px;
+}
+#shadow-1 {
+	position:absolute;
+	background-color:#524260;
+	width:65px;
+	height:120px;
+	top:25px;
+	left:25px;
+	border-radius:15px;
+	border-style:solid;
+	border-color:black;
+	border-width:1px;
+	-webkit-animation: shadow-move-farright;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-fuction: linear;
+}
+#shadow-2 {
+	position:absolute;
+	background-color:#68503E;
+	width:65px;
+	height:120px;
+	top:25px;
+	left:102px;
+	border-radius:15px;
+	border-style:solid;
+	border-color:black;
+	border-width:1px;
+	-webkit-animation: shadow-move-right;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-fuction: linear;
+}
+#shadow-3 {
+	position:absolute;
+	background-color:#C2B59B;
+	width:65px;
+	height:120px;
+	top:25px;
+	left:180px;
+	border-radius:15px;
+	border-style:solid;
+	border-color:black;
+	border-width:1px;
+	-webkit-animation: shadow-move-left;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-fuction: linear;
+}
+#shadow-4 {
+	position:absolute;
+	background-color:#F7EEDF;
+	width:65px;
+	height:120px;
+	top:25px;
+	left:257px;
+	border-radius:15px;
+	border-style:solid;
+	border-color:black;
+	border-width:1px;
+	-webkit-animation: shadow-move-farleft;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-fuction: linear;
+}
+#wand-container {
+	position:absolute;
+	background-color:#3A2B25;
+	width:297px;
+	height:65px;
+	top:155px;
+	left:25px;
+	border-color:#6D6E70;
+	border-style:solid;
+	border-radius:15px;
+	border-width:1.5px;
+}
+#wand-1 {
+	position:absolute;
+	background-color:#A7A9AC;
+	width:55px;
+	height:40px;
+	top:168px;
+	left:70px;
+	border-radius:100px;
+	border-style:solid;
+	border-color:black;
+	border-width:1.5px;
+}
+#wand-2 {
+	position:absolute;
+	background-color:#A7A9AC;
+	width:60px;
+	height:40px;
+	top:168px;
+	left:220px;
+	border-radius:100px;
+	border-style:solid;
+	border-color:black;
+	border-width:1.5px;
+}
+#wand-stick {
+	position:absolute;
+	background-color:black;
+	width:130px;
+	height:20px;
+	left:110px;
+	top:180px;
+}
+#water-bottle {
+	position:relative;
+	margin:50px;
+}
+#cap-body {
+ 	position:absolute;
+ 	background-color:#D4E6E8;
+ 	width:100px;
+ 	height:40px;
+ 	top:15px;
+ 	left:50px;
+ 	border-radius:10px;
+}
+#cap-top {
+	position:absolute;
+	background-color:#D4E6E8;
+	width:100px;
+	height:60px;
+	left:50px;
+	border-radius:100px;
+}
+#neck {
+	position:absolute;
+	background-color:#D4E6E8;
+	width:80px;
+	height:50px;
+	border-radius:15px;
+	top:40px;
+	left:60px;
+}
+#middle-1 {
+	position:absolute;
+	background-color:#D4E6E8;
+	top:70px;
+	left:30px;
+	width:130px;
+	height:140px;
+	border-radius:100px;
+}
+#middle-2 {
+	position:absolute;
+	background-color:#D4E6E8;
+	top:70px;
+	left:45px;
+	width:130px;
+	height:140px;
+	border-radius:100px;
+}
+#body {
+	position:absolute;
+	background-color:#D4E6E8;
+	top:180px;
+	left:28px;
+	height:275px;
+	width:150px;
+	border-radius:20px;
+}
+
+
