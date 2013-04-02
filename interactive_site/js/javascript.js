@@ -5,18 +5,21 @@ $(document).ready(function() {
 	
 	 $("#breakfast-selector > img").on("click",function(){
    	 $("#second-page").show(); 
+   	 $("#third-page").hide();
      $(".course > div").hide()
      $("#breakfast").show();
 	});
 	
 	$("#lunch-selector > img").on("click",function(){
    	 $("#second-page").show(); 
+   	 $("#third-page").hide();
      $(".course > div").hide()
      $("#lunch").show();
 	});
 	
 	$("#dinner-selector > img").on("click",function(){
-   	 $("#second-page").show(); 
+   	 $("#second-page").show();
+   	 $("#third-page").hide(); 
      $(".course > div").hide()
      $("#dinner").show();
 	});
