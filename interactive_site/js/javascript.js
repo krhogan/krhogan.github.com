@@ -63,42 +63,24 @@ $(document).ready(function() {
 	$("#fruitsalad > img").on("click",function(){
    	 $("#third-page").show(); 
      $(".recipes > div").hide()
-     $("recipe-fruitsalad").show();
+     $("#recipe-fruitsalad").show();
 	});
 	
 	$("#wrap > img").on("click",function(){
    	 $("#third-page").show(); 
      $(".recipes > div").hide()
-     $("recipe-wrap").show();
+     $("#recipe-wrap").show();
 	});
 	
 	$("#chickenkiwi > img").on("click",function(){
    	 $("#third-page").show(); 
      $(".recipes > div").hide()
-     $("recipe-chickenkiwi").show();
-	});
-	
-	$("#pizza > img").on("click",function(){
-   	 $("#third-page").show(); 
-     $(".recipes > div").hide()
-     $("recipe-pizza").show();
-	});
-	
-	$("#orangechicken > img").on("click",function(){
-   	 $("#third-page").show(); 
-     $(".recipes > div").hide()
-     $("recipe-orangechicken").show();
-	});
-	
-	$("#berrychops > img").on("click",function(){
-   	 $("#third-page").show(); 
-     $(".recipes > div").hide()
-     $("recipe-berrychops").show();
+     $("#recipe-chickenkiwi").show();
 	});
 	
 	$(".ingredients > h3").on("click",function(){
-		$(".ingredients-content").hide()
-		$(".ingredients-content > ul").show();
+	$(".ingredients-content").hide()
+	$(".ingredients-content > li").show();
 	});
 
  });
