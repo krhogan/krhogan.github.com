@@ -10,5 +10,9 @@ $(document).ready(function() {
 		$("breakfast").show();
 	});
 	
+	$(".ingredients > h3").on("click",function(){
+		$(".ingredients-content").hide()
+		$(".ingredients-content > ul").show();
+	});
 
  });
