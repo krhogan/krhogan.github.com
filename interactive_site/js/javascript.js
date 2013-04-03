@@ -78,6 +78,24 @@ $(document).ready(function() {
      $("#recipe-chickenkiwi").show();
 	});
 	
+	$("#pizza > img").on("click",function(){
+   	 $("#third-page").show(); 
+     $(".recipes > div").hide()
+     $("#recipe-pizza").show();
+	});
+	
+	$("#orangechicken > img").on("click",function(){
+   	 $("#third-page").show(); 
+     $(".recipes > div").hide()
+     $("#recipe-orangechicken").show();
+	});
+	
+	$("#berrychops > img").on("click",function(){
+   	 $("#third-page").show(); 
+     $(".recipes > div").hide()
+     $("#recipe-berrychops").show();
+	});
+	
 	$(".ingredients > h3").on("click",function(){
 	$(".ingredients-content").hide()
 	$(".ingredients-content > li").show();
