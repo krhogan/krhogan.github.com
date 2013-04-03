@@ -97,8 +97,7 @@ $(document).ready(function() {
 	});
 	
 	$(".ingredients > h3").on("click",function(){
-	$(".ingredients-content").hide()
-	$(".ingredients-content > li").show();
+	$(".ingredients-content > ul").show()
 	});
 
  });

@@ -232,6 +232,9 @@ header h3 {
 	float:left;
 	margin:30px;
 }
+.clear {
+	clear:both;
+}
 #third-page {
 	background-color:#752849;
 	height:100%;
@@ -245,8 +248,7 @@ header h3 {
 }
 .recipes {
 	width:100%;
-	
-}
+	}
 .recipes article {
 	float:left;
 }
@@ -265,6 +267,7 @@ header h3 {
 	text-transform:uppercase;
 	font-family: 'SourceSansProLight';
 	padding:5px;
+	color:#f2f2f2;
 }
 .name-instructions {
 	width:40%;
@@ -299,6 +302,7 @@ header h3 {
 	width:80%;
 }
 .ingredients-content ul {
+	display:none;
 	background-color:#e29000;
 	width:80%;
 	height:100%;
