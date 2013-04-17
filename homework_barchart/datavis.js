@@ -31,8 +31,6 @@ $(function() {
       
       var neighborhoodDiv = $("<div>").addClass("neighborhood")
       				.text(neighborhood)
-      				.css({ width: incidentsWidth,
-          			})
       				.appendTo(row);
       				
       var incidentsDiv = $("<div>").addClass("incidents")
