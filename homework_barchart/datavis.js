@@ -13,7 +13,8 @@ $(function() {
     // give vars different names and call them in the .text, also name and salary and within var person. to call something within an array use square brackets
       var info = data[i];
       var neighborhood = info["name"]
-      var incidents = parseInt(info["incidents"]);
+      var incidents = info["incidents"]
+	  var domestic = info["domestic"];
       
     //var person = data[i];
       //var name = person[8]
@@ -26,6 +27,12 @@ $(function() {
       // Fraction between 0 and 1
       var fraction = incidents / maxIncidents; 
       var incidentsWidth = fraction * 1000;
+
+	var maxDomestic = 2840;
+
+      // Fraction between 0 and 1
+      var fraction = domestic / maxDomestic; 
+      var domesticWidth = fraction * 100;
       
       var row = $("<div>").addClass("row");
       
@@ -39,6 +46,13 @@ $(function() {
           				backgroundColor: "purple"
           				 })
       				.appendTo(row);
+
+	var domesticDiv = $("<div>").addClass("domestic")
+				      .text(domestic)
+				      .css({ width: domesticWidth,
+				      backgroundColor: "skyblue"
+				          	})
+				      .appendTo(row);
                 
       $("body").append(row);
 	
