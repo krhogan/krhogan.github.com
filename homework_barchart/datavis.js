@@ -1,6 +1,6 @@
 $(function() {
 
-$("<p>").text("My Visualization Here")
+$("<p>").text("Boston Crime Stats")
 		.appendTo("body");
 
 });
