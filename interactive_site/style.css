@@ -150,6 +150,7 @@ html[xmlns] .clearfix { display: block; }
 }
 
 body {
+	height:100%;
 	width:100%;
 	text-align:center;
 }
