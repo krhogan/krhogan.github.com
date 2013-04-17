@@ -70,3 +70,15 @@ table {
 .clearfix { display: inline-block; }
 html[xmlns] .clearfix { display: block; }
 * html .clearfix { height: 1%; }
+
+.neighborhood {
+	font-family:helvetica;
+	font-weight:bold;
+	font-size:1.2em;
+	padding:10px;
+}
+.incidents {
+	font-family:helvetica;
+	height:30px;
+
+}

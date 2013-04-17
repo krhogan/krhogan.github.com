@@ -12,8 +12,8 @@ $(function() {
     
     // give vars different names and call them in the .text, also name and salary and within var person. to call something within an array use square brackets
       var info = data[i];
-      var neighborhood = info[name]
-      var incidents = parseInt(info[incidents],10);
+      var neighborhood = info["name"]
+      var incidents = parseInt(info["incidents"]);
       
     //var person = data[i];
       //var name = person[8]
@@ -38,7 +38,8 @@ $(function() {
       var incidentsDiv = $("<div>").addClass("incidents")
       				.text(incidents)
       				.css({ width: incidentsWidth,
-          				backgroundColor: "purple" })
+          				backgroundColor: "purple"
+          				 })
       				.appendTo(row);
                 
       $("body").append(row);
