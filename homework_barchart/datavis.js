@@ -14,7 +14,7 @@ $(function() {
       var info = data[i];
       var neighborhood = info["name"]
       var incidents = info["incidents"]
-	  var domestic = info["domestic"];
+      var domestic = info["domestic"];
       
     //var person = data[i];
       //var name = person[8]
@@ -22,17 +22,17 @@ $(function() {
 
 	console.log(data);
 	
-	var maxIncidents = 10651;
+	var maxIncidents = 11000;
       
       // Fraction between 0 and 1
       var fraction = incidents / maxIncidents; 
       var incidentsWidth = fraction * 1000;
-
-	var maxDomestic = 2840;
-
+      
+    var maxDomestic = 11000;
+      
       // Fraction between 0 and 1
       var fraction = domestic / maxDomestic; 
-      var domesticWidth = fraction * 100;
+      var domesticWidth = fraction * 1000;
       
       var row = $("<div>").addClass("row");
       
@@ -46,13 +46,13 @@ $(function() {
           				backgroundColor: "purple"
           				 })
       				.appendTo(row);
-
-	var domesticDiv = $("<div>").addClass("domestic")
-				      .text(domestic)
-				      .css({ width: domesticWidth,
-				      backgroundColor: "skyblue"
-				          	})
-				      .appendTo(row);
+      				
+      	var domesticDiv = $("<div>").addClass("domestic")
+      				.text(domestic)
+      				.css({ width: domesticWidth,
+          				backgroundColor: "skyblue"
+          				 })
+      				.appendTo(row);
                 
       $("body").append(row);
 	
