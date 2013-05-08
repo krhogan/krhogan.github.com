@@ -57,7 +57,7 @@ $(function() {
  	
  	// == shows all markers of a particular category, and ensures the checkbox is checked ==
       function show(city) {
-        for (var i=0; i<gmarkers.length; i++) {
+        for (var i=0; i<violations.data.length; i++) {
           if (gmarkers[i].mycategory == city) {
             gmarkers[i].setVisible(true);
           }
@@ -68,7 +68,7 @@ $(function() {
 
       // == hides all markers of a particular category, and ensures the checkbox is cleared ==
       function hide(category) {
-        for (var i=0; i<gmarkers.length; i++) {
+        for (var i=0; i<violations.data.length; i++) {
           if (gmarkers[i].mycategory == city) {
             gmarkers[i].setVisible(false);
           }
