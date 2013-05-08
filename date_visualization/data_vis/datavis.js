@@ -91,22 +91,22 @@ $(function() {
       }
       
       // == show or hide the categories initially ==
-        show("boston");
-        hide("backbay");
-        hide("downtown_financial_distric");
-        hide("fenway_kenmore_aububon_c");
-        hide("southboston");
-        hide("missionhill");
-        hide("allston");
-        hide("brighton");
-        hide("eastboston");
-        hide("roxbury");
-        hide("jamaicaplain");
-        hide("charlestown");
-        hide("hydepark");
-        hide("roslindale");
-        hide("dorchester");
-        hide("mattapan");
+        //show("boston");
+        //hide("backbay");
+        //hide("downtown_financial_distric");
+        //hide("fenway_kenmore_aububon_c");
+        //hide("southboston");
+        //hide("missionhill");
+        //hide("allston");
+        //hide("brighton");
+        //hide("eastboston");
+        //hide("roxbury");
+        //hide("jamaicaplain");
+        //hide("charlestown");
+        //hide("hydepark");
+        //hide("roslindale");
+        //hide("dorchester");
+        //hide("mattapan");
 
 
 	
